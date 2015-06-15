@@ -2,7 +2,7 @@ package ch1.ex1;
 
 import java.util.Arrays;
 
-public class ArraySorting {
+class ArraySorting {
 
     public static void main(String[] args) {
         String[] strs = { "aaaaa", "ggg", "b", "ffffffffffff" };
