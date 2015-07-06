@@ -1,4 +1,4 @@
-package ch1.ex2;
+package ch1.ex02;
 
 import java.io.File;
 import java.util.ArrayList;

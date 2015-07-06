@@ -1,4 +1,4 @@
-package ch1.ex8;
+package ch1.ex08;
 
 import java.util.ArrayList;
 import java.util.List;

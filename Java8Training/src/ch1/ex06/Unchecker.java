@@ -1,4 +1,4 @@
-package ch1.ex6;
+package ch1.ex06;
 
 import java.util.concurrent.Callable;
 

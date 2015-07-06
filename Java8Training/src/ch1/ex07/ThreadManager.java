@@ -1,4 +1,4 @@
-package ch1.ex7;
+package ch1.ex07;
 
 public class ThreadManager {
 

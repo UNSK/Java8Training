@@ -1,4 +1,4 @@
-package ch1.ex5;
+package ch1.ex05;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
