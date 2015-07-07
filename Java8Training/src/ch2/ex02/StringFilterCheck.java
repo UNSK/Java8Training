@@ -11,7 +11,7 @@ public class StringFilterCheck {
     public static void main(String[] args) throws IOException {
         Path path = Paths.get("./resource/alice.txt");
         String[] ss = Files.lines(path)
-            .flatMap(s -> Stream.of(s.split("[\\s,.?!']+")))
+            .flatMap(s -> Stream.of(s.split("[\\P{L}]+")))
             .peek(System.out::println)
             .filter(s -> s.length() > 8)
             .peek(s -> System.out.println("[call filter]"))
