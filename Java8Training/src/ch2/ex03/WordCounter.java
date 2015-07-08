@@ -26,14 +26,14 @@ public class WordCounter {
         long ellapsed = System.nanoTime();
         IntStream.range(0, trials).forEach(i ->
             words.stream().filter(s -> s.length() > thresh).count());
-        long sequencialTime = System.nanoTime() - ellapsed;
+        long sequentialTime = System.nanoTime() - ellapsed;
         
         ellapsed = System.nanoTime();
         IntStream.range(0, trials).forEach(i ->
             words.parallelStream().filter(s -> s.length() > thresh).count());
         long parallelTime = System.nanoTime() - ellapsed;
         
-        System.out.println("sequencial: " + sequencialTime);
+        System.out.println("sequential: " + sequentialTime);
         System.out.println("parallel  : " + parallelTime);
         
     }
