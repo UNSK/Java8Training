@@ -15,6 +15,11 @@ public class StreamUtil {
         // infiniteStream.filter(n -> n % 3 == 0).limit(3);
     }
     
+    /**
+     * check if the given stream is finite.
+     * @param stream the given stream.
+     * @return true if the given stream is finite; false otherwise.
+     */
     public static <T> boolean isFinite(Stream<T> stream) {
         // spliterator() は terminal operation
         return stream.spliterator().estimateSize() != Long.MAX_VALUE; 
